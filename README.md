@@ -14,4 +14,4 @@ Repozytorium zawiera zbiór wszystkich prac domowych realizowanych w ramach kurs
 ## Spis zadań
 
 1. [Formularz z walidacją](./67_1/) - zadanie rozpoczęte na zajęciach. w pliku js dodana walidacja.
-2. *wkrótce...*
+2. [Układanie zmiennych](./51_2/)

@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "anseki.vscode-color",
+        "EditorConfig.EditorConfig",
+        "vincaslt.highlight-matching-tag",
+        "ritwickdey.LiveServer",
+        "esbenp.prettier-vscode",
+        "Gruntfuggly.todo-tree"
+    ]
+}
