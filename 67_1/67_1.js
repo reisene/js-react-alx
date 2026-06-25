@@ -54,10 +54,14 @@ function validate() {
     let noValid = [];
     let ok = true;
 
+    // wybieranie wszystkich selectorów span z id zaczynającym się od error
     let err = document.querySelectorAll('span[id^="error_"]');
+    // czyszczenie wcześniejszych błędów, jeśli były
     for (let x of err) x.innerHTML = '';
 
     for (let x of dane.keys()) {
+        if (x === 'uwagi') continue;
+
         if (x === 'technologie' && dane.get(x).length === 0) {
             ok = false;
             noValid.push('technologia');
@@ -96,6 +100,8 @@ function validate() {
         for (let x of noValid) {
             document.querySelector(`span#error_${x}`).innerHTML = 'Błąd';
         }
+
+        return false;
     }
 
     return true;
