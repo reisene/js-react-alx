@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>15_2</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <header class="app-header">
+            <h2 id="app-name">JS + React</h2>
+            <nav id="app-nav">
+                <a href="/js-react-alx">
+                    <button>Wróć na stronę główną</button>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h1>Obliczanie silni</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form id="fact">
+                            <label for="numb">Podaj liczbę całkowitą >1:</label>
+                            <input
+                                type="number"
+                                min="1"
+                                name="num"
+                                id="num"
+                                onkeydown="prevent(event)"
+                            />
+                        </form>
+                        <br />
+                        <button type="button" id="submitBtn">Wyślij</button>
+                        <button type="reset" id="resetBtn" form="fact">
+                            Resetuj
+                        </button>
+                    </td>
+                    <td id="effect">Wynik: <span id="result"></span></td>
+                </tr>
+            </table>
+        </main>
+    </body>
+</html>
