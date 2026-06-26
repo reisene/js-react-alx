@@ -12,7 +12,7 @@ do {
 let sum = 0;
 let even = 0;
 let odd = 0;
-let avg;
+let avg = 0;
 let min;
 let max;
 

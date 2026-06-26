@@ -1,7 +1,7 @@
 let pos = 0;
 let err = 0;
 
-for (i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
     let x = Math.floor(Math.random() * 10 + 1);
     let y = Math.floor(Math.random() * 10 + 1);
 
@@ -17,9 +17,7 @@ for (i = 0; i < 10; i++) {
         sum = x * y;
     }
 
-    let ask = Number(
-        prompt(`Pytanie ${i + 1}/10: ile to jest: ${x} ${op} ${y}?`)
-    );
+    let ask = Number(prompt(`Pytanie ${i + 1}/10: ile to jest: ${x} ${op} ${y}?`));
     if (ask === sum) {
         pos++;
         console.log(`Odpowiedź prawidłowa!`);

@@ -19,7 +19,7 @@ function oblicz(a, b, c) {
             break;
 
         case '/':
-            if (a === 0 || b === 0) {
+            if (b === 0) {
                 document.querySelector('#effect').innerHTML = '<span style="color: red; font-weight: 600;">Błąd: Nie można dzielić przez zero!</span>';
                 return;
             }
@@ -28,7 +28,7 @@ function oblicz(a, b, c) {
             break;
 
         case '%':
-            if (a === 0 || b === 0) {
+            if (b === 0) {
                 document.querySelector('#effect').innerHTML = '<span style="color: red; font-weight: 600;">Błąd: Nie można obliczyć reszty z dzielenia przez zero!</span>';
                 return;
             }

@@ -1,7 +1,7 @@
 document.querySelector('button#submitBtn').onclick = function () {
     let n = document.querySelector('input[name="num"]').value;
     let result = 1;
-    for (i = 1; i <= n; i++) {
+    for (let i = 1; i <= n; i++) {
         result *= i;
     }
 

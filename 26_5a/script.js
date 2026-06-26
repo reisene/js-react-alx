@@ -1,7 +1,5 @@
-let tab = [];
-
 function liczby() {
-    tab = [];
+    const tab = [];
     let num;
     do {
         num = Number(prompt('Podaj liczbę całkowitą:'));
@@ -14,8 +12,8 @@ function liczby() {
     for (let x of tab) mapa.set(x, (mapa.get(x) || 0) + 1);
 
     let output = '';
-    for (let [x, ilość] of mapa) {
-        output += `<div><span class="liczba">${x}</span> - występuje <span class="ile">${ilość}</span>x <br/></div>`;
+    for (let [x, ile] of mapa) {
+        output += `<div><span class="liczba">${x}</span> - występuje <span class="ile">${ile}</span>x <br/></div>`;
     }
     document.querySelector('#effect').innerHTML = output;
 }
