@@ -1,18 +1,18 @@
 {
-  "singleQuote": true,
-  "trailingComma": "es5",
-  "tabWidth": 4,
-  "printWidth": 80,
-  "semi": true,
-  "overrides": [
-    {
-      "files": [
-        "*.json",
-        "*.jsonc"
-      ],
-      "options": {
-        "tabWidth": 2
-      }
-    }
-  ]
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "printWidth": 250,
+    "semi": true,
+    "overrides": [
+        {
+            "files": [
+                "*.json",
+                "*.jsonc"
+            ],
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
 }

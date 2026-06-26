@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 80px;
+}
+
+.app-header {
+    background-color: dimgray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between; /* Rozsuwa h2 w lewo, nav w prawo */
+    align-items: center; /* Wyrównuje h2 i nav w pionie */
+    padding: 0 20px;
+}
+.app-header nav button {
+    background-color: transparent; /* Przezroczyste tło */
+    color: #fff; /* Biały napis */
+    border: 1px solid #fff; /* Cienka biała ramka */
+    padding: 8px 16px; /* Odstępy wewnątrz */
+    cursor: pointer; /* Kursor łapki */
+    border-radius: 4px; /* Zaokrąglone rogi */
+    font-size: 0.9rem;
+    transition: background 0.3s; /* Płynne przejście przy najechaniu */
+}
+
+.app-header nav button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Delikatne podświetlenie po najechaniu */
+}
+.app-header nav a {
+    text-decoration: none;
+}
+
+main {
+    margin: 0 auto;
+    width: 75%;
+    /* min-width: 600px; */
+}
+
+#desc {
+    text-align: center;
+    align-items: center;
+}
+
+#effect {
+    margin: 10px auto;
+    /* vertical-align: top; */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 5px solid #4caf50;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    text-align: left;
+    width: 75%;
+    max-width: 800px;
+}
+
+#effect span {
+    font-weight: 600;
+}
+
+#start {
+    background-color: #4caf50; /* Zielone tło */
+    color: white; /* Biały tekst */
+    padding: 12px 24px; /* Wygodny rozmiar */
+    border: none; /* Usuwamy domyślną ramkę */
+    border-radius: 8px; /* Zaokrąglone rogi */
+    font-size: 1rem; /* Czytelna czcionka */
+    cursor: pointer; /* Kursor w kształcie łapki */
+    transition:
+        background-color 0.3s,
+        transform 0.2s; /* Płynne efekty */
+}
+
+/* Efekt po najechaniu myszką */
+#start:hover {
+    background-color: #45a049;
+}
+
+/* Efekt wciśnięcia przycisku */
+#start:active {
+    transform: scale(0.98); /* Przycisk minimalnie się "kurczy" przy kliknięciu */
+}
+
+span.liczba {
+    color: #333;
+}
+span.ile {
+    color: #4caf50;
+}
