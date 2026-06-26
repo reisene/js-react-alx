@@ -8,20 +8,20 @@ do {
     // Odrzucenie "Anuluj" oraz pustego pola
     if (raw === null || raw.trim() === '') {
         alert('Błąd! Nie podano żadnej wartości. Wpisz liczbę całkowitą.');
-        num = null;
+        input = null;
         continue;
     }
     input = Number(raw);
 
     // Odrzucenie tekstu oraz liczb zmiennoprzecinkowych (np. 1.5)
-    if (isNaN(num) || !Number.isInteger(num)) {
+    if (isNaN(input) || !Number.isInteger(input)) {
         alert('Błąd! To nie jest poprawna liczba całkowita. Podaj format cyfrowy.');
         continue;
     }
 
     // Dodajemy do tablicy tylko wtedy, gdy to nie jest zero kończące program
-    if (num !== 0) {
-        tab.push(num);
+    if (input !== 0) {
+        tab.push(input);
     }
 } while (input !== 0);
 
