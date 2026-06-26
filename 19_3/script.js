@@ -3,9 +3,25 @@ let tab = new Array();
 let input;
 
 do {
-    input = Number(prompt('Podaj liczbę całkowitą:'));
-    if (input !== 0 && !isNaN(input)) {
-        tab.push(input);
+    let raw = prompt('Podaj liczbę całkowitą:');
+
+    // Odrzucenie "Anuluj" oraz pustego pola
+    if (raw === null || raw.trim() === '') {
+        alert('Błąd! Nie podano żadnej wartości. Wpisz liczbę całkowitą.');
+        num = null;
+        continue;
+    }
+    input = Number(raw);
+
+    // Odrzucenie tekstu oraz liczb zmiennoprzecinkowych (np. 1.5)
+    if (isNaN(num) || !Number.isInteger(num)) {
+        alert('Błąd! To nie jest poprawna liczba całkowita. Podaj format cyfrowy.');
+        continue;
+    }
+
+    // Dodajemy do tablicy tylko wtedy, gdy to nie jest zero kończące program
+    if (num !== 0) {
+        tab.push(num);
     }
 } while (input !== 0);
 
@@ -29,12 +45,17 @@ if (tab.length > 0) {
     min = Math.min(...tab);
     max = Math.max(...tab);
     console.log(tab);
-}
 
-document.querySelector('#sum').innerHTML = sum;
-document.querySelector('#even').innerHTML = even;
-document.querySelector('#odd').innerHTML = odd;
-document.querySelector('#amount').innerHTML = tab.length;
-document.querySelector('#avg').innerHTML = avg.toFixed(2);
-document.querySelector('#min').innerHTML = min;
-document.querySelector('#max').innerHTML = max;
+    document.querySelector('#sum').innerHTML = sum;
+    document.querySelector('#even').innerHTML = even;
+    document.querySelector('#odd').innerHTML = odd;
+    document.querySelector('#amount').innerHTML = tab.length;
+    document.querySelector('#avg').innerHTML = avg.toFixed(2);
+    document.querySelector('#min').innerHTML = min;
+    document.querySelector('#max').innerHTML = max;
+} else {
+    let err = document.querySelectorAll('span');
+    for (let span of err) {
+        span.innerHTML = 'Brak liczb!';
+    }
+}

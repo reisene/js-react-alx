@@ -38,7 +38,7 @@ body {
 main {
     margin: 0 auto;
     width: 75%;
-    min-width: 600px;
+    /* min-width: 600px; */
 }
 
 #desc {
@@ -59,7 +59,7 @@ main {
     width: 75%;
     max-width: 800px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Sztywne 3 równe kolumny */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* responsywny auto-fit */
     gap: 15px 20px; /* Odstęp: 15px między wierszami, 20px między kolumnami */
 }
 

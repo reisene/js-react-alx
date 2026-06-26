@@ -38,7 +38,7 @@ body {
 main {
     margin: 0 auto;
     width: 75%;
-    min-width: 600px;
+    /* min-width: 600px; */
 }
 
 #desc {

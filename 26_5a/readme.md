@@ -33,4 +33,4 @@ Do zliczenia powtórzeń wykorzystałam obiekt `new Map()`. Przechodzę przez ze
 
 Wynik końcowy składam w zmiennej `output`, iterując po gotowej mapie. Każdy wiersz owijam w element `<div>` z przypisanymi klasami `.liczba` oraz `.ile`, a następnie wygenerowaną zawartość wstrzykuję do elementu `#effect` przy użyciu `.innerHTML`.
 
-W pliku `style.css` dla kontenera `#effect` zaimplementowałam układ `display: grid` oraz `grid-template-columns: repeat(3, 1fr)`. Wymusza to automatyczne i sztywne rozbicie wyników na dokładnie 3 równe kolumny, niezależnie od tego, ile liczb podał użytkownik.
+W pliku `style.css` dla kontenera `#effect` zaimplementowałam układ `display: grid` oraz responsywne dopasowanie kolumn za pomocą `grid-template-columns: repeat(auto-fit, minmax(180px, 1fr))`. Pozwala to na automatyczne zachowanie 3 równych kolumn na standardowych ekranach monitorów, podczas gdy na węższych wyświetlaczach (np. telefonach) liczba kolumn automatycznie się zmniejsza, eliminując poziomy pasek przewijania strony.

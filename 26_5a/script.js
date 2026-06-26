@@ -2,8 +2,22 @@ function liczby() {
     const tab = [];
     let num;
     do {
-        num = Number(prompt('Podaj liczbę całkowitą:'));
-        if (num !== 0 && !isNaN(num)) {
+        let raw = prompt('Podaj liczbę całkowitą:');
+
+        if (raw === null || raw.trim() === '') {
+            alert('Błąd! nie podano żadnej wartości. wpisz liczbę całkowitą.');
+            num = null;
+            continue;
+        }
+
+        num = Number(raw);
+
+        if (isNaN(num) || !Number.isInteger(num)) {
+            alert('Błąd! To nie jest poprawna liczba całkowita. Podaj format cyfrowy (np. 10, a nie 1.5 lub tekst).');
+            continue;
+        }
+
+        if (num !== 0) {
             tab.push(num);
         }
     } while (num !== 0);
