@@ -56,6 +56,6 @@ if (tab.length > 0) {
 } else {
     let err = document.querySelectorAll('span');
     for (let span of err) {
-        span.innerHTML = 'Brak liczb!';
+        span.innerHTML = '-';
     }
 }

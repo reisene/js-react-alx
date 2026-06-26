@@ -26,20 +26,12 @@
                 <tr>
                     <td>
                         <form id="fact">
-                            <label for="numb">Podaj liczbę całkowitą >1:</label>
-                            <input
-                                type="number"
-                                min="1"
-                                name="num"
-                                id="num"
-                                onkeydown="prevent(event)"
-                            />
+                            <label for="num">Podaj liczbę całkowitą >1:</label>
+                            <input type="number" min="1" name="num" id="num" onkeydown="prevent(event)" />
                         </form>
                         <br />
                         <button type="button" id="submitBtn">Wyślij</button>
-                        <button type="reset" id="resetBtn" form="fact">
-                            Resetuj
-                        </button>
+                        <button type="reset" id="resetBtn" form="fact">Resetuj</button>
                     </td>
                     <td id="effect">Wynik: <span id="result"></span></td>
                 </tr>
