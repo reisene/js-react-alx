@@ -20,4 +20,6 @@ Repozytorium zawiera zbiór wszystkich prac domowych realizowanych w ramach kurs
 5. [Wynik mnożenia](./59_2/) - użytkownik podaje wynik mnożenia 2 losowych liczb i dostane info o błędnej lub poprawnej odpowiedzi.
 6. [Wynik mnożenia](./59_2a/) - użytkownik podaje wynik mnożenia, w przypadku błędu dostaje ponownie to samo pytanie.
 7. [Zliczanie wystąpień licz (Map)](./26_5a/) - użytkownik podaje dowolną ilość liczb, a program o zakończenia oblicza ile razy każda z liczb wystąpiła i wyświetla wynik.
-8. _wkrótce_
+8. [Funkcja obliczania sumy i średniej z 5 liczb](./22/)
+9. [](./27/)
+10. _wkrótce_
