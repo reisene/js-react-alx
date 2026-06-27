@@ -1,6 +1,6 @@
 let data = new Map();
 
-document.querySelector('input[type="button"').onclick = function () {
+document.querySelector('input[type="button"]').onclick = function () {
     data.clear();
 
     data.set('login', document.querySelector('input[name=login]').value.trim());

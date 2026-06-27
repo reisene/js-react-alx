@@ -150,6 +150,6 @@ main {
     max-width: 800px;
 }
 
-form summary {
+form legend {
     font-style: italic;
 }

@@ -14,7 +14,7 @@ Repozytorium zawiera zbiór wszystkich prac domowych realizowanych w ramach kurs
 ## Spis zadań
 
 1. [Formularz z walidacją](./67_1/) — zadanie rozpoczęte na zajęciach; w pliku JS dodana walidacja formularza przed wysłaniem.
-    1. [Formularz z walidacją vol. 2](<./67_1(2)/>) - powtórzenie zadania nr. 1, tylko z własnym podejściem do zadania i rozszerzoną walidacją.
+    1. [Formularz z walidacją vol. 2](<./67_1(2)/>) - powtórzenie zadania nr 1, tylko z własnym podejściem do zadania i rozszerzoną walidacją.
 2. [Układanie zmiennych](./51_2/) — ćwiczenie ze zmiennymi i typami danych.
 3. [Obliczanie silni](./15_2/)
 4. [Seria liczb i obliczenia](./19_3/)
