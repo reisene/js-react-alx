@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="pl">
     <head>
         <meta charset="utf-8" />
         <script src="67_1.js" defer></script>
@@ -8,28 +8,8 @@
             body {
                 line-height: 25px;
             }
-
-            table {
-                margin: 0 auto;
-                width: 60%;
-            }
-
-            .podsumowanie {
-                vertical-align: top;
-                line-height: 90px;
-                font-size: 25px;
-                text-align: left;
-                width: 75%;
-            }
-
-            .podsumowanie span {
-                font-weight: bold;
-            }
-
-            .error {
-                color: red;
-            }
         </style>
+        <title>67_1 — Formularz</title>
     </head>
     <body>
         <header class="app-header">
@@ -40,94 +20,61 @@
                 </a>
             </nav>
         </header>
-        <table>
-            <tr>
-                <td colspan="2">
-                    <h1>Formularz aplikacyjny</h1>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <form>
-                        <b>Imie</b><br />
-                        <input type="text" name="imie" />
-                        <span class="error" id="error_imie"></span>
-                        <br /><br />
-                        <b>Nazwisko</b><br />
-                        <input type="text" name="nazwisko" />
-                        <span class="error" id="error_nazwisko"></span>
-                        <br /><br />
-                        <b>Miejsce pracy</b><br />
-                        <select name="miasto">
-                            <option value="">-- wybierz --</option>
-                            <option value="Warszawa">Warszawa</option>
-                            <option value="Kraków">Kraków</option>
-                            <option value="Katowice">Katowice</option>
-                            <option value="Poznań">Poznań</option>
-                        </select>
-                        <span class="error" id="error_miasto"></span>
-                        <br /><br />
-                        <b>Znajomość technologii</b>
-                        <span class="error" id="error_technologia"></span><br />
-                        <input
-                            type="checkbox"
-                            name="tech1"
-                            value="JavaScript"
-                        />
-                        JavaScript <br />
-                        <input type="checkbox" name="tech2" value="PHP" /> PHP
-                        <br />
-                        <input type="checkbox" name="tech3" value="SQL" /> SQL
-                        <br />
-                        <input type="checkbox" name="tech4" value="JAVA" /> JAVA
-                        <br /><br />
-                        <b>Aplikowanie na stanowisko</b>
-                        <span class="error" id="error_stanowisko"></span><br />
-                        <input
-                            type="radio"
-                            name="stanowisko"
-                            value="Młodszy programista"
-                        />
-                        Młodszy programista <br />
-                        <input
-                            type="radio"
-                            name="stanowisko"
-                            value="Stażysta"
-                        />
-                        Stażysta <br />
-                        <input
-                            type="radio"
-                            name="stanowisko"
-                            value="Starszy programista"
-                        />
-                        Starszy programista <br />
-                        <input
-                            type="radio"
-                            name="stanowisko"
-                            value="Administrator"
-                        />
-                        Administrator <br /><br />
-                        <b>Dodatkowe uwagi</b><br />
-                        <textarea name="uwagi"></textarea>
-                        <br /><br />
-                        <input type="button" value="Wyślij" />
-                    </form>
-                </td>
-                <td class="podsumowanie">
-                    Imię: <span id="imie"></span>
-                    <br />
-                    Nazwisko: <span id="nazwisko"></span>
-                    <br />
-                    Miejsce pracy: <span id="miasto"></span>
-                    <br />
-                    Znajomość technologii: <span id="technologie"></span>
-                    <br />
-                    Aplikowanie na stanowisko: <span id="stanowisko"></span>
-                    <br />
-                    Dodatkowe uwagi: <span id="uwagi"></span>
-                    <br />
-                </td>
-            </tr>
-        </table>
+        <main>
+            <form>
+                <label for="imie">Imię: </label>
+                <input type="text" name="imie" id="imie_input" />
+                <span id="error_imie" style="color: red"></span><br />
+
+                <label for="nazwisko">Nazwisko: </label>
+                <input type="text" name="nazwisko" id="nazwisko_input" />
+                <span id="error_nazwisko" style="color: red"></span><br />
+
+                <label for="miasto">Miasto: </label>
+                <select name="miasto">
+                    <option value="">-- wybierz --</option>
+                    <option value="Warszawa">Warszawa</option>
+                    <option value="Kraków">Kraków</option>
+                    <option value="Wrocław">Wrocław</option>
+                    <option value="Poznań">Poznań</option>
+                    <option value="Gdańsk">Gdańsk</option>
+                    <option value="Katowice">Katowice</option>
+                </select>
+                <span id="error_miasto" style="color: red"></span><br />
+
+                <fieldset>
+                    <legend>Stanowisko:</legend>
+                    <label><input type="radio" name="stanowisko" value="frontend" /> Frontend</label>
+                    <label><input type="radio" name="stanowisko" value="backend" /> Backend</label>
+                    <label><input type="radio" name="stanowisko" value="fullstack" /> Fullstack</label>
+                </fieldset>
+                <span id="error_stanowisko" style="color: red"></span><br />
+
+                <fieldset>
+                    <legend>Technologie:</legend>
+                    <label><input type="checkbox" name="technologie" value="HTML" /> HTML</label>
+                    <label><input type="checkbox" name="technologie" value="CSS" /> CSS</label>
+                    <label><input type="checkbox" name="technologie" value="JavaScript" /> JavaScript</label>
+                    <label><input type="checkbox" name="technologie" value="React" /> React</label>
+                </fieldset>
+                <span id="error_technologia" style="color: red"></span><br />
+
+                <label for="uwagi">Uwagi: </label>
+                <textarea name="uwagi"></textarea><br />
+
+                <input type="button" value="Wyślij" />
+            </form>
+
+            <hr />
+
+            <div id="output">
+                <p>Imię: <span id="imie"></span></p>
+                <p>Nazwisko: <span id="nazwisko"></span></p>
+                <p>Miasto: <span id="miasto"></span></p>
+                <p>Stanowisko: <span id="stanowisko"></span></p>
+                <p>Technologie: <span id="technologie"></span></p>
+                <p>Uwagi: <span id="uwagi"></span></p>
+            </div>
+        </main>
     </body>
 </html>

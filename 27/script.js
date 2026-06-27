@@ -59,7 +59,7 @@ function pobierzDane() {
     do {
         c = prompt('Podaj rodzaj działania (+, -, *, /, %)');
         if (!op.includes(c)) {
-            alert('Błąd! Niepoprawny znak działania. Wybierz jeden z poprwnych operatorów');
+            alert('Błąd! Niepoprawny znak działania. Wybierz jeden z poprawnych operatorów.');
         }
     } while (!op.includes(c));
 
