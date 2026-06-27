@@ -10,10 +10,22 @@ Format oparty na [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/).
 
 ### Added
 - Szablony issues (`.github/ISSUE_TEMPLATE`) — [#3](https://github.com/reisene/js-react-alx/pull/3)
+- Plik `51_2/style.css` — style przeniesione z bloku inline w `index.html`
+- Pliki `readme.md` w folderach: `59_2`, `59_2a`, `26_5a`, `27`, `51_2`, `67_1`
 
 ### Fixed
 - Poprawiono literówkę: `safari` → `Safari` w sekcjach Desktop i Smartphone szablonu `bug_report.md` [`ee4185c`](https://github.com/reisene/js-react-alx/commit/ee4185c6a9d9fb3ff1e25dc2d417552ca069b615)
 - Ustawiono domyślne etykiety: `bug` w `bug_report.md`, `enhancement` w `feature_request.md` [`ee4185c`](https://github.com/reisene/js-react-alx/commit/ee4185c6a9d9fb3ff1e25dc2d417552ca069b615)
+- `59_2/script.js`, `59_2a/script.js` — wyniki quizu wyświetlane na stronie zamiast tylko w konsoli; quiz uruchamiany przyciskiem (nie przy załadowaniu strony)
+- `26_5a/script.js` — poprawiono wielkość liter w komunikatach `alert` po `Błąd!`
+- `27/script.js` — poprawiono literówkę `poprwnych` → `poprawnych`
+- `51_2/index.html` — usunięto style inline z `<head>`, dodano `<link>` do zewnętrznego `style.css`
+- `67_1/index.html` — dodano brakujący atrybut `lang="pl"` do `<html>`
+- `67_1/readme.md` — naprawiono rozjeżdżający się widok listy po bloku kodu w sekcji [1.0] pkt 2.1.4
+
+### Changed
+- Zaktualizowano opisy zadań w głównym `README.md` (zadania: `59_2`, `59_2a`, `26_5a`, `27`, `51_2`, `67_1`)
+- Zaktualizowano `readme.md` w folderach `59_2`, `59_2a`, `26_5a`, `27`, `51_2` — poprawki treści i dodanie opisu zmian funkcjonalnych
 
 ---
 
