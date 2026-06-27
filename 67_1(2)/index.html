@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="./style.css" />
+        <title>67_1(2)</title>
+    </head>
+    <body>
+        <header class="app-header">
+            <h2 id="app-name">JS + React</h2>
+            <nav id="app-nav">
+                <a href="/js-react-alx">
+                    <button>Wróć na stronę główną</button>
+                </a>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <aside class="registration-sidebar" aria-labelledby="form-title">
+                <h1 id="form-title">Rejestracja</h1>
+                <form id="register-form">
+                    <legend>Pola oznaczone gwiazdką są obowiązkowe.</legend>
+                    <div class="form-field">
+                        <label for="reg-login">Login *</label>
+                        <input type="text" id="reg-login" name="login" />
+                        <small class="error-msg" id="error_login"></small>
+                    </div>
+
+                    <div id="pass">
+                        <div class="form-field">
+                            <label for="reg-password">Hasło *</label>
+                            <input type="password" id="reg-password" name="password" />
+                            <small class="error-msg" id="error_password"></small>
+                        </div>
+
+                        <div class="form-field pass">
+                            <label for="reg-password-confirm">Powtórz hasło *</label>
+                            <input type="password" id="reg-password-confirm" name="password_confirm" />
+                            <small class="error-msg" id="error_password_confirm"></small>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="reg-imie">Imię *</label>
+                        <input type="text" id="reg-imie" name="imie" />
+                        <small class="error-msg" id="error_imie"></small>
+                    </div>
+
+                    <div id="contact">
+                        <div class="form-field">
+                            <label for="reg-email">Email *</label>
+                            <input type="email" id="reg-email" name="email" />
+                            <small class="error-msg" id="error_email"></small>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="reg-telefon">Telefon</label>
+                            <input type="tel" id="reg-telefon" name="telefon" />
+                            <small class="error-msg" id="error_telefon"></small>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="reg-zrodlo">Skąd się o nas dowiedziałeś? *</label>
+                        <select id="reg-zrodlo" name="zrodlo">
+                            <option value="">--WYBIERZ--</option>
+                            <option value="Social media">Serwisy społecznościowe</option>
+                            <option value="Wyszukiwarka">Wyszukiwarka Google</option>
+                            <option value="Znajomi">Od znajomych</option>
+                            <option value="Inne">Inne źródło</option>
+                        </select>
+                        <small class="error-msg" id="error_zrodlo"></small>
+                    </div>
+
+                    <div class="form-field-radio">
+                        <span class="field-title">Zgoda na newsletter *</span>
+                        <div class="radio-group">
+                            <input type="radio" id="news-yes" name="newsletter" value="Tak" />
+                            <label for="news-yes">Tak</label>
+
+                            <input type="radio" id="news-no" name="newsletter" value="Nie" />
+                            <label for="news-no">Nie</label>
+                        </div>
+                        <small class="error-msg" id="error_newsletter"></small>
+                    </div>
+
+                    <div class="form-field-checkbox">
+                        <input type="checkbox" id="reg-rules" name="regulamin" value="Zaakceptowano" />
+                        <label for="reg-rules">Akceptuję regulamin serwisu *</label>
+                        <small class="error-msg" id="error_regulamin"></small>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="reg-uwagi">Dodatkowe uwagi / opis</label>
+                        <textarea id="reg-uwagi" name="uwagi"></textarea>
+                    </div>
+
+                    <input type="button" value="Zarejestruj" />
+                </form>
+            </aside>
+
+            <main aria-labelledby="summary">
+                <h1 id="summary">Podsumowanie rejestracji</h1>
+                <div id="effect">
+                    <div>Login: <span id="login"></span></div>
+                    <div>Hasło: <span id="password" class="masked-password"></span></div>
+                    <div>Powtórz hasło: <span id="password_confirm" class="masked-password"></span></div>
+                    <div>Imię: <span id="imie"></span></div>
+                    <div>Email: <span id="email"></span></div>
+                    <div>Telefon: <span id="telefon"></span></div>
+                    <div>Źródło: <span id="zrodlo"></span></div>
+                    <div>Newsletter: <span id="newsletter"></span></div>
+                    <div>Regulamin: <span id="regulamin"></span></div>
+                    <div>Uwagi: <span id="uwagi"></span></div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
