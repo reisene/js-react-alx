@@ -5,7 +5,7 @@
 - Zaprojektuj formularz wraz z obsługą podglądu informacji
 - Jeśli dane pole nie zostało wypełnione, powinno to zostać zasygnalizowane stosownym komunikatem.
 
-> [NOTE!]
+> [!NOTE]
 > Jest to zadanie, które było wykonywanie już wcześniej ([67_1](../67_1/)). To jest tylko moje indywidualne podejście do tego zadania, gdzie od podstaw chcę taki formularz zrobić.
 
 ## Logika
