@@ -7,7 +7,9 @@ function startQuiz() {
         let y = Math.floor(Math.random() * 10 + 1);
         let sum = x * y;
 
-        let ask = Number(prompt(`Pytanie ${i + 1}/5: ile to jest: ${x} * ${y}?`));
+        let raw = prompt(`Pytanie ${i + 1}/5: ile to jest: ${x} * ${y}?`);
+        if (raw === null) return;
+        let ask = Number(raw);
 
         const row = document.createElement('p');
         if (ask === sum) {
