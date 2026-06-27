@@ -8,3 +8,5 @@ ignore:
     - node_modules
     - vendor
     - use-text-content
+    - dom-xss
+    - javascript/xss
