@@ -7,8 +7,4 @@ ignore:
     - .tox
     - node_modules
     - vendor
-
-rule_settings:
-    enable: [default]
-    disable:
-        - use-text-content
+    - use-text-content
