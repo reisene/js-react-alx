@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 80px;
+}
+
+.app-header {
+    background-color: dimgray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between; /* Rozsuwa h2 w lewo, nav w prawo */
+    align-items: center; /* Wyrównuje h2 i nav w pionie */
+    padding: 0 20px;
+}
+.app-header nav button {
+    background-color: transparent; /* Przezroczyste tło */
+    color: #fff; /* Biały napis */
+    border: 1px solid #fff; /* Cienka biała ramka */
+    padding: 8px 16px; /* Odstępy wewnątrz */
+    cursor: pointer; /* Kursor łapki */
+    border-radius: 4px; /* Zaokrąglone rogi */
+    font-size: 0.9rem;
+    transition: background 0.3s; /* Płynne przejście przy najechaniu */
+}
+
+.app-header nav button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Delikatne podświetlenie po najechaniu */
+}
+.app-header nav a {
+    text-decoration: none;
+}
+
+/* Styl dla kontenerów flexa */
+.wrapper {
+    display: flex;
+    gap: 50px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.registration-sidebar {
+    flex: 1;
+    min-width: 320px;
+}
+
+main {
+    flex: 1;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#pass,
+#contact {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+#pass .form-field,
+#contact .form-field {
+    flex: 1;
+}
+
+/* Komunikaty o błędach w małych tagach tekstowych */
+.error-msg {
+    color: red;
+    font-size: 0.85rem;
+    min-height: 18px;
+    margin-top: 3px;
+    display: block;
+}
+
+.form-field-radio,
+.form-field-checkbox {
+    margin-bottom: 15px;
+}
+
+.form-field-radio .field-title {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.radio-group label,
+.form-field-checkbox label {
+    cursor: pointer;
+}
+
+/* ========================================== */
+/* EFEKT ZAKRYTEGO HASŁA W PODSUMOWANIU       */
+/* ========================================== */
+.masked-password {
+    background-color: #e0e0e0; /* Blady szary kolorek */
+    color: transparent; /* Sprawia, że wpisany tekst jest niewidoczny */
+    border-radius: 4px;
+    padding: 0 6px;
+    display: inline-block;
+    min-width: 80px; /* Zapewnia widoczność maski zanim pojawi się tekst z JS */
+    user-select: none; /* Blokuje kopiowanie/zaznaczanie gdy zasłonięte */
+    transition:
+        background-color 0.2s,
+        color 0.2s;
+    cursor: pointer;
+}
+
+/* Pokazywanie hasła po najechaniu myszką */
+.masked-password:hover {
+    background-color: transparent;
+    color: inherit; /* Przywraca domyślny kolor tekstu rodzica */
+    user-select: auto; /* Pozwala normalnie skopiować jawne hasło */
+}
+
+/* Pogrubienie wszystkich wartości wyświetlanych w podsumowaniu */
+#effect span {
+    font-weight: bold;
+}
+
+#effect {
+    margin: 10px auto;
+    /* vertical-align: top; */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 5px solid #4caf50;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    text-align: left;
+    width: 75%;
+    max-width: 800px;
+}
+
+form summary {
+    font-style: italic;
+}
