@@ -6,7 +6,7 @@ Format oparty na [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/).
 
 ---
 
-## [Unreleased]
+## [0.4.0] — 2026-06-27
 
 ### Added
 - Zadanie `./67_1(2)` — formularz rejestracyjny od podstaw, układ Flexbox, maskowanie haseł [`b91741d`](https://github.com/reisene/js-react-alx/commit/b91741d687721dcc384bddbb4c6009a6d41e5aee)
@@ -31,13 +31,6 @@ Format oparty na [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/).
 
 ### Chore
 - Synchronizacja szalonów issues z `main` na gałąź `js` [`22ddcda`](https://github.com/reisene/js-react-alx/commit/22ddcdaf234a0de77f8fa88a63db4e94b1ddaf76)
-
----
-
-## [0.4.0] — 2026-06-27
-
-### Docs
-- Uzupełniono `67_1(2)/README.md` o sekcję JavaScript i frontmatter — [#5](https://github.com/reisene/js-react-alx/pull/5) [`87c1e83`](https://github.com/reisene/js-react-alx/commit/87c1e83c29c7b6c83985e19313569eae4c466021)
 
 ---
 
