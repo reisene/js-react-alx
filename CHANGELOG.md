@@ -12,8 +12,15 @@ Format oparty na [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/).
 - Szablony issues (`.github/ISSUE_TEMPLATE`) — [#3](https://github.com/reisene/js-react-alx/pull/3)
 
 ### Fixed
-- Poprawiono literówkę: `safari` → `Safari` w sekcjach Desktop i Smartphone szablonu `bug_report.md` [`ee4185c`](https://github.com/reisene/js-react-alx/commit/ee4185c6a9d9fb3ff1e25dc2d417552ca069b615)
+- Poprawiono litówę: `safari` → `Safari` w sekcjach Desktop i Smartphone szablonu `bug_report.md` [`ee4185c`](https://github.com/reisene/js-react-alx/commit/ee4185c6a9d9fb3ff1e25dc2d417552ca069b615)
 - Ustawiono domyślne etykiety: `bug` w `bug_report.md`, `enhancement` w `feature_request.md` [`ee4185c`](https://github.com/reisene/js-react-alx/commit/ee4185c6a9d9fb3ff1e25dc2d417552ca069b615)
+
+---
+
+## [0.4.0] — 2026-06-27
+
+### Docs
+- Uzupełniono `67_1(2)/README.md` o sekcję JavaScript i frontmatter — [#5](https://github.com/reisene/js-react-alx/pull/5) [`87c1e83`](https://github.com/reisene/js-react-alx/commit/87c1e83c29c7b6c83985e19313569eae4c466021)
 
 ---
 
