@@ -2,7 +2,7 @@
 
 ## Treść
 
-- Użytkownik podaje dowolną ilość liczb całkowitych, które zapisywane są do tablicy.
+- Użytkownik podaje dowolna ilość liczb całkowitych, które zapisywane są do tablicy.
 - W chwili podania cyfry 0 – przerywamy pobieranie kolejnych liczb.
 - Program ma za zadanie zliczyć jakie podał liczby i ile ich było np.:
 - Wykorzystaj do tego celu mapę.
@@ -10,11 +10,11 @@
 <pre>
 2,4,6,2,8,7,4
 
-2 – wystépuje 2x
-4 – wystépuje 2x
-6 – wystépuje 1x
-8 – wystépuje 1x
-7 – wystépuje 1x
+2 – występuje 2x
+4 – występuje 2x
+6 – występuje 1x
+8 – występuje 1x
+7 – występuje 1x
 
 </pre>
 
