@@ -6,30 +6,31 @@ Format oparty na [Keep a Changelog](https://keepachangelog.com/pl/1.1.0/).
 
 ---
 
-## [Unreleased]
+## [0.4.0] — 2026-06-27
 
 ### Added
-- Szablony issues (`.github/ISSUE_TEMPLATE`) — [#3](https://github.com/reisene/js-react-alx/pull/3)
-- Plik `51_2/style.css` — style przeniesione z bloku inline w `index.html`
-- Pliki `readme.md` w folderach: `59_2`, `59_2a`, `26_5a`, `27`, `51_2`, `67_1`
+- Zadanie `./67_1(2)` — formularz rejestracyjny od podstaw, układ Flexbox, maskowanie haseł [`b91741d`](https://github.com/reisene/js-react-alx/commit/b91741d687721dcc384bddbb4c6009a6d41e5aee)
 
 ### Fixed
-- Poprawiono literówkę: `safari` → `Safari` w sekcjach Desktop i Smartphone szablonu `bug_report.md` [`ee4185c`](https://github.com/reisene/js-react-alx/commit/ee4185c6a9d9fb3ff1e25dc2d417552ca069b615)
-- Ustawiono domyślne etykiety: `bug` w `bug_report.md`, `enhancement` w `feature_request.md` [`ee4185c`](https://github.com/reisene/js-react-alx/commit/ee4185c6a9d9fb3ff1e25dc2d417552ca069b615)
-- `59_2/script.js`, `59_2a/script.js` — wyniki quizu wyświetlane na stronie zamiast tylko w konsoli; quiz uruchamiany przyciskiem (nie przy załadowaniu strony)
-- `26_5a/script.js` — poprawiono wielkość liter w komunikatach `alert` po `Błąd!`
-- `27/script.js` — poprawiono literówkę `poprwnych` → `poprawnych`
-- `51_2/index.html` — usunięto style inline z `<head>`, dodano `<link>` do zewnętrznego `style.css`
-- `67_1/index.html` — dodano brakujący atrybut `lang="pl"` do `<html>`
-- `67_1/readme.md` — naprawiono rozjeżdżający się widok listy po bloku kodu w sekcji [1.0] pkt 2.1.4
+- `59_2` i `59_2a`: wyniki quizu wyświetlane w DOM zamiast `alert` [`d36ae5a`](https://github.com/reisene/js-react-alx/commit/d36ae5a9dc6f2c9692193db4b7e3dd0ead83a454)
+- `59_2` i `59_2a`: dodanie przycisku Start — quiz startuje po kliknięciu, nie przy ładowaniu strony [`9c6f33b`](https://github.com/reisene/js-react-alx/commit/9c6f33b22f1fa6daad8cdf2f190a02fba90c330a)
+- `59_2a/script.js`: uproszczenie wyrażenia ternary [`4bacb81`](https://github.com/reisene/js-react-alx/commit/4bacb81ad0deab8fe606b7b4d5ffe73ca02c893b)
+- `26_5a/script.js`: poprawiono wielkość liter w komunikatach `alert` [`d36ae5a`](https://github.com/reisene/js-react-alx/commit/d36ae5a9dc6f2c9692193db4b7e3dd0ead83a454)
+- `27/script.js`: literówćka `'poprwnych'` → `'poprawnych'` [`d36ae5a`](https://github.com/reisene/js-react-alx/commit/d36ae5a9dc6f2c9692193db4b7e3dd0ead83a454)
+- `51_2/style.css`: utworzono brakujący plik (style wyprowadzone z `index.html`) [`dcf541d`](https://github.com/reisene/js-react-alx/commit/dcf541d97b876bb34ac25116d25ceec940523f99)
+- `67_1/index.html`: przywrócono oryginalną zawartość, dodano tylko `lang="pl"` do `<html>` [`dcf541d`](https://github.com/reisene/js-react-alx/commit/dcf541d97b876bb34ac25116d25ceec940523f99)
+- `59_1/readme.md`: poprawiono nagłówek i literówkę `Math.random()` [`a93ce76`](https://github.com/reisene/js-react-alx/commit/a93ce76c2d7c7fc250ac9f15d1010b900e9aa34f)
+- Szablony issues: `safari` → `Safari` w sekcjach Desktop i Smartphone `bug_report.md` [`f4a9d77`](https://github.com/reisene/js-react-alx/commit/f4a9d77afe13fc3539d4d637f4e7cac3c21de364)
+- Szablony issues: domyślne etykiety `bug` / `enhancement` [`f4a9d77`](https://github.com/reisene/js-react-alx/commit/f4a9d77afe13fc3539d4d637f4e7cac3c21de364)
+- `67_1(2)/README.md`: brakujące literówćki w treści [`d8628e0`](https://github.com/reisene/js-react-alx/commit/d8628e006f92fc3c469e1d0d0592c4073edf89aa)
 
-### Changed
-- Zaktualizowano opisy zadań w głównym `README.md` (zadania: `59_2`, `59_2a`, `26_5a`, `27`, `51_2`, `67_1`)
-- Zaktualizowano `readme.md` w folderach `59_2`, `59_2a`, `26_5a`, `27`, `51_2` — poprawki treści i dodanie opisu zmian funkcjonalnych
+### Docs
+- `67_1(2)/README.md`: uzupełniono o sekcję JavaScript i frontmatter — [#5](https://github.com/reisene/js-react-alx/pull/5) [`87c1e83`](https://github.com/reisene/js-react-alx/commit/87c1e83c29c7b6c83985e19313569eae4c466021)
+- Aktualizacje readme w poprawionych zadaniach (`59_2`, `59_2a`, `26_5a`, `27`, `51_2`) [`0b8b7bd`](https://github.com/reisene/js-react-alx/commit/0b8b7bd846e9adc91aaff4a1bf143deef7a7dac8) [`f890696`](https://github.com/reisene/js-react-alx/commit/f890696213b569e81463a3c044572a811c8b85f9)
+- `67_1/CHANGELOG.md`: tłumaczenie na polski, poprawki literówek [`a93ce76`](https://github.com/reisene/js-react-alx/commit/a93ce76c2d7c7fc250ac9f15d1010b900e9aa34f)
 
-### Fixed
-- Poprawiono literówkę: `safari` → `Safari` w sekcjach Desktop i Smartphone szablonu `bug_report.md` [`ee4185c`](https://github.com/reisene/js-react-alx/commit/ee4185c6a9d9fb3ff1e25dc2d417552ca069b615)
-- Ustawiono domyślne etykiety: `bug` w `bug_report.md`, `enhancement` w `feature_request.md` [`ee4185c`](https://github.com/reisene/js-react-alx/commit/ee4185c6a9d9fb3ff1e25dc2d417552ca069b615)
+### Chore
+- Synchronizacja szalonów issues z `main` na gałąź `js` [`22ddcda`](https://github.com/reisene/js-react-alx/commit/22ddcdaf234a0de77f8fa88a63db4e94b1ddaf76)
 
 ---
 
