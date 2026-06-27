@@ -18,4 +18,8 @@ Ile to jest: 3 * 9 ?
 
 ## Logika
 
-Zastosowałam pętlę `for` dla 5 powtórzeń. Za każdym powtórzeniem program przypisuje do zmiennych `x` i `y` dwie randomowe liczby całkowite w zakresie 1-10 (`Math.floor(Math.rand() * 10 + 1)`) i oblicza ich iloraz (`sum = x*y`). Następnie pyta użytkownika o wynik działania (`ask = Number(prompt(...))`), po czym jest sprawdzanie wyniku i w konsoli wyświetla się odpowiedni komunikat o tym, czy użytkownik podał poprawny czy błędny wynik.
+Zastosowałam pętlę `for` dla 5 powtórzeń. Za każdym powtórzeniem program przypisuje do zmiennych `x` i `y` dwie randomowe liczby całkowite w zakresie 1–10 (`Math.floor(Math.random() * 10 + 1)`) i oblicza ich iloczyn (`sum = x * y`). Następnie pyta użytkownika o wynik działania (`ask = Number(prompt(...))`), po czym sprawdza odpowiedź.
+
+Cała logika quizu jest opakowana w funkcję `startQuiz()`, wywoływaną po kliknięciu przycisku **Rozpocznij quiz** na stronie. Dzięki temu pop-up nie pojawia się automatycznie przy wczytaniu strony.
+
+Wyniki każdego pytania są wyświetlane na stronie w elemencie `#effect` — poprawna odpowiedź kolorem zielonym, błędna czerwonym. Ponowne kliknięcie przycisku czyci poprzednie wyniki i uruchamia nowy quiz.
