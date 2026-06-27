@@ -5,7 +5,7 @@ function liczby() {
         let raw = prompt('Podaj liczbę całkowitą:');
 
         if (raw === null || raw.trim() === '') {
-            alert('Błąd! nie podano żadnej wartości. wpisz liczbę całkowitą.');
+            alert('Błąd! Nie podano żadnej wartości. Wpisz liczbę całkowitą.');
             num = null;
             continue;
         }
