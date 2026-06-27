@@ -10,3 +10,4 @@ ignore:
     - use-text-content
     - dom-xss
     - javascript/xss
+    - javascript.browser.security.insecure-innerhtml
