@@ -19,4 +19,6 @@ Ile to jest: 3 * 9 ?
 
 ## Logika
 
-Zastosowałam początkowo tą samą logikę zadania, co w zadaniu [59_2](../59_2/) - przynajmniej jeśli chodzi o zmienne `x`, `y` oraz `sum`. Jednak w tym przypadku w pętli `for` zastosowałam drugą pętlę - `while`, która przypadku poprawnej odpowiedzi pozwala dalej pętli `for` działać (zadać kolejne pytanie), a w przypadku błędu zadaje ponownie to samo pytanie. W obu przypadkach użytkownik dostaje w konsoli komunikat o tym, czy odpowiedź jest prawidłowa czy błędna.
+Zastosowałam początkowo tą samą logikę zadania, co w zadaniu [59_2](../59_2/) — przynajmniej jeśli chodzi o zmienne `x`, `y` oraz `sum`. Jednak w tym przypadku w pętli `for` zastosowałam drugą pętlę — `while`, która w przypadku poprawnej odpowiedzi pozwala dalej pętli `for` działać (zadać kolejne pytanie), a w przypadku błędu zadaje ponownie to samo pytanie.
+
+Podobnie jak w [59_2](../59_2/), cała logika jest opakowana w funkcję `startQuiz()` wywoływaną przyciskiem **Rozpocznij quiz**. Na stronie wyświetlane jest podsumowanie każdego pytania wraz z liczbą prób potrzebnych do udzielenia poprawnej odpowiedzi.
