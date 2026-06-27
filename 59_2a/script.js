@@ -20,7 +20,7 @@ function startQuiz() {
         }
 
         const row = document.createElement('p');
-        row.textContent = `Pytanie ${i + 1}: ${x} * ${y} = ${sum} — poprawna odpowiedź po ${attempts} ${attempts === 1 ? 'próbie' : attempts < 5 ? 'próbach' : 'próbach'}. ✓`;
+        row.textContent = `Pytanie ${i + 1}: ${x} * ${y} = ${sum} — poprawna odpowiedź po ${attempts} ${attempts === 1 ? 'próbie' : 'próbach'}. ✓`;
         row.style.color = 'green';
         effect.appendChild(row);
     }
