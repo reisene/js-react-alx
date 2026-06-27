@@ -22,4 +22,4 @@ Zastosowałam pętlę `for` dla 5 powtórzeń. Za każdym powtórzeniem program 
 
 Cała logika quizu jest opakowana w funkcję `startQuiz()`, wywoływaną po kliknięciu przycisku **Rozpocznij quiz** na stronie. Dzięki temu pop-up nie pojawia się automatycznie przy wczytaniu strony.
 
-Wyniki każdego pytania są wyświetlane na stronie w elemencie `#effect` — poprawna odpowiedź kolorem zielonym, błędna czerwonym. Ponowne kliknięcie przycisku czyci poprzednie wyniki i uruchamia nowy quiz.
+Wyniki każdego pytania są wyświetlane na stronie w elemencie `#effect` — poprawna odpowiedź kolorem zielonym, błędna czerwonym. Ponowne kliknięcie przycisku czyści poprzednie wyniki i uruchamia nowy quiz.
