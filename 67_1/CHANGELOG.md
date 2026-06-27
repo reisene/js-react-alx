@@ -19,7 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 ### Zmienione
 - **[BREAKING CHANGE]** Całkowita zmiana architektury przechowywania danych. Usunięto rozproszone zmienne globalne na rzecz scentralizowanej struktury **`Map` (kolekcja klucz-wartość)** (`dane = new Map()`). Zmienia to całkowicie sposób dostępu do danych w całej aplikacji.
 - Przebudowano mechanizm zbierania informacji z list wielokrotnego i jednokrotnego wyboru. Zamiast operować na zewnętrznych tablicach, wartości są wstrzykiwane bezpośrednio do struktury nowej mapy danych (`dane.get('technologie').push()`).
-- Całkowity refaktor logiki walidacji (`validate()`). Zastąpiono kaskadę sztywnych warunków dla każdej zmiennej dynamiczną pętlą sprawdzającą klucze w locie (`dane.get(x)`), co pozwala na automatyczne i bezkbłędne skalowanie formularza o nowe pola w przyszłości.
+- Całkowity refaktor logiki walidacji (`validate()`). Zastąpiono kaskadę sztywnych warunków dla każdej zmiennej dynamiczną pętlą sprawdzającą klucze w locie (`dane.get(x)`), co pozwala na automatyczne i bezbłędne skalowanie formularza o nowe pola w przyszłości.
 - Zoptymalizowano sekcję renderowania podsumowania (HTML): kaskada zapytań `document.querySelector` została zastąpiona jedną zwięzłą pętlą `for...of` iterującą po kluczach Mapy (`dane.keys()`), z automatycznym formatowaniem tablic do tekstu przy użyciu `.join(', ')`.
 
 ### Naprawione
@@ -35,7 +35,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 
 ### Dodane
 - Wprowadzono funkcję walidacji `validate()` uruchamianą po kliknięciu przycisku "Wyślij", sprawdzającą poprawność wypełnienia wymaganych pól formularza.
-- Dodano mechanizm wyświetlania komunikatu "Błąd" wewnątrz dedykowanych elementów `<span>` o identyfikatorach `error_{element}` w przypadku niewypłnienia wymaganych danych.
+- Dodano mechanizm wyświetlania komunikatu "Błąd" wewnątrz dedykowanych elementów `<span>` o identyfikatorach `error_{element}` w przypadku niewypełnienia wymaganych danych.
 - Dodano zmienną flagową (`let ok = true`) oraz tablicę `dane` wewnątrz funkcji walidującej, służące do zbierania błędów i warunkowego blokowania zapisu danych.
 - Wprowadzono pętlę `for...of` iterującą po tablicy `dane`, która dynamicznie wstrzykuje tekst błędu do odpowiednich selektorów za pomocą `.innerHTML`.
 - Dodano warunek sprawdzający wynik funkcji `validate()` przed wpisaniem danych z formularza do sekcji podsumowania (`<td class='podsumowanie'>`) – dane pojawiają się tam tylko wtedy, gdy funkcja zwróci `true`.
