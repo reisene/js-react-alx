@@ -9,9 +9,9 @@ function startQuiz() {
         let attempts = 0;
 
         while (true) {
-            let raw = Number(prompt(`Pytanie ${i + 1}/5: ile to jest: ${x} * ${y}?`));
+            let raw = prompt(`Pytanie ${i + 1}/5: ile to jest: ${x} * ${y}?`);
             if (raw === null) return;
-            let ask = raw;
+            let ask = Number(raw);
             attempts++;
             if (ask === sum) {
                 console.log(`Odpowiedź prawidłowa! ${x} * ${y} = ${sum}`);
