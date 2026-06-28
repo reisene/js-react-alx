@@ -1,5 +1,10 @@
 # Prace domowe - JavaScript+React (ALX)
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/53395572dcbd4d1d96804ade7393d5ed)](https://app.codacy.com/gh/reisene/js-react-alx/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Known Vulnerabilities](https://snyk.io/test/github/reisene/js-react-alx/badge.svg)](https://snyk.io/test/github/reisene/js-react-alx)
+![GitHub last commit](https://img.shields.io/github/last-commit/reisene/js-react-alx)
+![GitHub repo size](https://img.shields.io/github/repo-size/reisene/js-react-alx)
+
 Repozytorium zawiera zbiór wszystkich prac domowych realizowanych w ramach kursu.
 
 <div align="center">
