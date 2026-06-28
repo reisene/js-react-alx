@@ -29,12 +29,7 @@ body {
 }
 
 .app-header nav button:hover {
-    background-color: rgba(
-        255,
-        255,
-        255,
-        0.2
-    ); /* Delikatne podświetlenie po najechaniu */
+    background-color: rgba(255, 255, 255, 0.2); /* Delikatne podświetlenie po najechaniu */
 }
 .app-header nav a {
     text-decoration: none;
